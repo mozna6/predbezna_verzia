@@ -1,4 +1,5 @@
 
+
 \documentclass[10pt,twoside,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
@@ -42,8 +43,10 @@ Tvorba animácií zaznamenala výrazný pokrok až s príchodom počítačov. Do
 
 Prvýkrát sa  motion capture technológia objavila začiatkom 80. rokov v biomechanických laboratóriách. Až neskôr sa začal mo-cap využívať vo veľkom aj vo filmoch a videohrách. S prvou populárnou 3D animáciou vytvorenou práve vďaka mo-cap technológií sme sa mohli stretnúť vo filme Batman navždy. 
 
+
+
 \section {Princípy fungovania mo-cap technológie}
-Pojem motion capture rozumieme ako proces snímania pohybu ľubovoľného reálneho objektu a jeho následne spracovanie počítačom do digitálneho modelu.  Tento proces možno rozdeliť na tri samostatné fázy. Prvá fáza je samotné snímanie pohybu, po nej nasleduje spracovanie nasnímaných dát. Tieto dve fázy sa označujú ako zachytávanie pohybu. Poslednou fázou je ukladanie spracovaných dát. Aj keď v dnešnej dobe namiesto ukladania sa dáta využívajú skôr priamo. Napríklad pri interaktívnych aplikáciach, ktoré nám umožňujú vytvárať animované 3D modely v reálnom čase.
+Pojem motion capture rozumieme ako proces snímania pohybu ľubovoľného reálneho objektu a jeho následne spracovanie počítačom do digitálneho modelu.  Tento proces možno rozdeliť na tri samostatné fázy. Prvá fáza je samotné snímanie pohybu, po nej nasleduje spracovanie nasnímaných dát. Tieto dve fázy sa označujú ako zachytávanie pohybu. Poslednou fázou je ukladanie spracovaných dát.\cite{sharma2013motion} Aj keď v dnešnej dobe namiesto ukladania sa dáta využívajú skôr priamo. Napríklad pri interaktívnych aplikáciach, ktoré nám umožňujú vytvárať animované 3D modely v reálnom čase.
 
 \section {Typy mo-cap systémov}
 V dnešnej dobe existuje široké spektrum technológií a systémov využívaných na snímanie pohybu. Tie najpokročilejšie sú schopné zachytávať pohyb s veľmi vysokou presnosťou a to pri veľmi vysokých vzorkovacích frekvenciách. Medzi najpoužívanejšie systémy patria akustické, optické, magnetické a mechanické. 
@@ -51,14 +54,19 @@ V dnešnej dobe existuje široké spektrum technológií a systémov využívan�
 Táto kapitola je venovaná spomínaným systémom, je v nej poskytnutý prehľad o jednotlivých systémoch, ako aj ich výhody a nevýhody. 
 
 \subsection{Optické systémy}
-Pri optických systémoch snímania pohybu má herec oblečený špeciálne navrhnutý oblek, ktorý je pokrytý reflektormi umiestnenými na tele herca, pričom kamery s vysokým rozlíšením sú tak rozmiestnené, aby snímali pohyby herca. Každá kamera generuje pre každý reflektor 2D súradnice. Následne sa pomocou počítačového softvéru vykoná analýza zo všetkých dát zachýtených kamerami, čím sa vypočítajú 3D súradnice reflektorov.
+Pri optických systémoch snímania pohybu má herec oblečený špeciálne navrhnutý oblek, ktorý je pokrytý reflektormi umiestnenými na tele herca, pričom kamery s vysokým rozlíšením sú tak rozmiestnené, aby snímali pohyby herca. Každá kamera generuje pre každý reflektor 2D súradnice. Následne sa pomocou počítačového softvéru vykoná analýza zo všetkých dát zachýtených kamerami, čím sa vypočítajú 3D súradnice reflektorov.\cite{metamotion:2}
+\begin{figure}[H]
+\includegraphics[width=7cm]{opticky.jpg}
+\centering
+\caption{Znázornenie optického mo-cap systému}
+\end{figure}
 \subsubsection{Výhody a nevýhody}
 Hlavnou výhodou optického systému je veľmi vysoká frekvencia vzorkovania, ktorá umožňuje snímanie veľmi rýchlych pohybov, napríklad pri gymnastike alebo atletike. Ďaľšou výhodou je to, že oproti akustickému systému či iným ďalším systémom nie sú potrebné žiadne káble, ktoré by obmedzovali pohyby herca. To poskytuje hercovi maximálnu volnosť pohybu. Navyše, vďaka tomu, že reflektory nemajú žiaden odpor, tak počet reflektorov použitých pri snímaní pohybu je neobmedzený, čo  umožňuje zachytávať aj tie najmenšie detaily.
 
 Žiadny systém nie je dokonalý a to isté platí aj pri optickom systéme. Hlavným problémom tejto metódy je to, že dochádza k častej oklúzií reflektorov najmä pri malých objektoch, ako sú napríklad reflektory na rukách. Tento problém môže byť čiastočne odstránený pridaním ďalších kamier, čo nás privázda k ďaľšej nevýhode a tou je cena. Tieto systémy sú najdrahšie zo všetkých, pričom cena sa môže vyšplhať až do výšky 250 000\$ (americký dolár).
 
 \subsection{Magnetické systémy}
-Magnetické systémy snímania pohybu využívajú senzory umiestnené na tele herca. Tieto senzory slúžia na meranie magnetického poľa generovaného zdrojom vysielača. Senzory , ako aj vysielač sú pripojené k riadiacej jednotke, ktorá koreluje ich polohy v rámci magnetického poľa. . Táto riadiaca jednotka je prepojená s počítačom, ktorý pomocou softvérového ovladača dokáže znázorniť tieto pozície v trojrozmernom priestore.
+Magnetické systémy snímania pohybu využívajú senzory umiestnené na tele herca. Tieto senzory slúžia na meranie magnetického poľa generovaného zdrojom vysielača. Senzory , ako aj vysielač sú pripojené k riadiacej jednotke, ktorá koreluje ich polohy v rámci magnetického poľa. .\cite{metamotion:1} Táto riadiaca jednotka je prepojená s počítačom, ktorý pomocou softvérového ovladača dokáže znázorniť tieto pozície v trojrozmernom priestore.
 \subsubsection{Výhody a nevýhody}
 I napriek tomu, že v porovnaní s inými systémami na snímanie pohybu ide o pomerne lacnejší variant, presnosť nasnímaných dát je aj tak dostatočne vysoká. S typickou vzorkovacou frekvenciou 100 snímkou  za sekundu sú magnetické systémy vhodné hlavne na snímanie jednoduchých pohybov.
 
@@ -66,7 +74,10 @@ Ako aj pri akustickom systéme, tak aj pri magneticko systéme je na správne fu
 
 
 \subsection{Mechanické systémy}
-Mechanické systémy sú najčastejšie stavané na mechanickej konštrukcíi, ktorá meria uhly a vzdialenosti medzi mechanickými časťami pomocou potenciometrov. Tento typ systému môže byť prostredníctvom senzorov implementovaný do exoskeletonu. Herec si oblečie exoskeleton a násladne každým pohybom, ktorý vykoná sa pohnú aj mechanické časti, pričom sa meria relatívny pohyb herca.
+Mechanické systémy sú najčastejšie stavané na mechanickej konštrukcíi, ktorá meria uhly a vzdialenosti medzi mechanickými časťami pomocou potenciometrov. Tento typ systému môže byť prostredníctvom senzorov implementovaný do exoskeletonu. Herec si oblečie exoskeleton a násladne každým pohybom, ktorý vykoná sa pohnú aj mechanické časti, pričom sa meria relatívny pohyb herca.\cite{enwiki:1050209322}
+
+
+
 
 \section {Aplikovanie mo-cap technológie}
 \subsection{Kinematografia}
@@ -74,6 +85,13 @@ Mo-cap technológia je najrozšírenejšia v zábavnom priemysle a to najmä v k
 
 \subsubsection{Pán prsteňov: Dve veže – Andy Serkis}
 Na jednom z najdokonalejších prevedení snímania pomocou mo-cap technológie má obrovskú zásluhu herec Andy Serkis. Andy Serkis spolu s filmármi z filmu Pán prsteňov: Dve veže zmenili celkový postup snímania pohybu aký bol dovtedy známy. Dovtedy bola technológia využívaná na zachytávanie veľkých pohybov bez zamerania na detaily. To sa však zmenilo s postavou Gluma, ktorú stvárnil Serkis. Ten dokázal na postavu preniesť beznádej a nešťastie, akým si táto postava vo filme prešla. Od stvárnenia Gluma sa dá Andy Serkis považovať za priekopníka mo-cap technológie.
+
+\begin{figure}[H]
+\includegraphics[width=7cm]{AndySerkis.jpg}
+\centering
+\caption{Stvárnenie postavy Gluma hercom Andym Serkisom vo filme Pán prsteňov:Dve veže}
+
+\end{figure}
 
 
 
@@ -93,6 +111,19 @@ Mo-cap má svoje uplatnenie okrem zábavného priemyslu aj v medicíne. V medic�
 \section {História}
 Za predchodcu mo-cap technológie sa považuje rotoskopia. Rotoskopia sa objavila v 20. rokoch 20 storočia a za jej vynálezcu sa považuje Max Fleischer. Ide o prekreslovanie filmových snímkov na filmovom páse tak, aby listovanie týchto snímkov vytvorilo ilúziu pohybu. Tento proces bol však veľmi namáhavý a zdĺhavý, keďže autor musel kresliť každú snímku samostatne. Aj napriek tomu bola rotoskopia využívaná pri väčšine animovaných filmov, napríklad ako Snehulienka a sedem trpaslíkov, Popoluška a mnoho ďalších. Táto technika sa nedočkala výrazneho pokroku niekoľko ďaľších desaťročí.
 
-Vývoj mo-cap nastal až so zvýšeným záujmom o skúmanie pohybu človeka začiatkom 80. rokov minulého storočia.  Tom Calvert, profesor informatiky a kineziológie bol jednym z prvých, ktorý využil potenciometre na zachytenie pohybov kolena. Chvíľu na to prišla spoločnosť MIT ( Massachusettský technologický inštitút) so svojou grafickou marionetou.  Herec mal oblečený oblek, ktorý mal na sebe umiestnené LED svetlá a následne bol zachytený jeho pohyb pomocou optického systému a zábery boli spätne vykreslené do dvojrozmerného priestoru. Krátko nato sa vývoj mo-cap technológie opäť výrazne spomalil kvôli vysokým nákladom a nedostatočným výkonom počítačov.
+Vývoj mo-cap nastal až so zvýšeným záujmom o skúmanie pohybu človeka začiatkom 80. rokov minulého storočia.  Tom Calvert, profesor informatiky a kineziológie bol jednym z prvých, ktorý využil potenciometre na zachytenie pohybov kolena. Chvíľu na to prišla spoločnosť MIT ( Massachusettský technologický inštitút) so svojou grafickou marionetou.  \cite{Sturman1994ABH} Herec mal oblečený oblek, ktorý mal na sebe umiestnené LED svetlá a následne bol zachytený jeho pohyb pomocou optického systému a zábery boli spätne vykreslené do dvojrozmerného priestoru. Krátko nato sa vývoj mo-cap technológie opäť výrazne spomalil kvôli vysokým nákladom a nedostatočným výkonom počítačov.
 \section {Záver}
+
+\clearpage
+\bibliographystyle{unsrt}
+\bibliography{zdroje}
+
+
+
+
+
+
+
+
+
 \end{document}
