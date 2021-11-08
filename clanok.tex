@@ -41,4 +41,30 @@ Mo-cap technológia sa stala neoddeliteľnou súčasťou našich bežných živo
 Tvorba animácií zaznamenala výrazný pokrok až s príchodom počítačov. Dovtedy však bolo všetko potrebné robiť ručne, čo malo za následok, že tvorba animovaného filmu mohla trvať veľmi dlhú dobu. Za prvého predchodcu motion capture sa považuje rotoskopia. Väčšina starších animovaných filmov bola postavená práve na nej. Išlo o kreslenie obrázkov na filmový pás, pričom cieľom bolo vytvoriť ilúziu pohybu. Neskôr túto činnosť nahradili počítače, čo výrazne urýchlilo proces tvorby animácie. 
 
 Prvýkrát sa  motion capture technológia objavila začiatkom 80. rokov v biomechanických laboratóriách. Až neskôr sa začal mo-cap využívať vo veľkom aj vo filmoch a videohrách. S prvou populárnou 3D animáciou vytvorenou práve vďaka mo-cap technológií sme sa mohli stretnúť vo filme Batman navždy. 
+
+\section {Princípy fungovania mo-cap technológie}
+Pojem motion capture rozumieme ako proces snímania pohybu ľubovoľného reálneho objektu a jeho následne spracovanie počítačom do digitálneho modelu.  Tento proces možno rozdeliť na tri samostatné fázy. Prvá fáza je samotné snímanie pohybu, po nej nasleduje spracovanie nasnímaných dát. Tieto dve fázy sa označujú ako zachytávanie pohybu. Poslednou fázou je ukladanie spracovaných dát. Aj keď v dnešnej dobe namiesto ukladania sa dáta využívajú skôr priamo. Napríklad pri interaktívnych aplikáciach, ktoré nám umožňujú vytvárať animované 3D modely v reálnom čase.
+
+\section {Typy mo-cap systémov}
+V dnešnej dobe existuje široké spektrum technológií a systémov využívaných na snímanie pohybu. Tie najpokročilejšie sú schopné zachytávať pohyb s veľmi vysokou presnosťou a to pri veľmi vysokých vzorkovacích frekvenciách. Medzi najpoužívanejšie systémy patria akustické, optické, magnetické a mechanické. 
+
+Táto kapitola je venovaná spomínaným systémom, je v nej poskytnutý prehľad o jednotlivých systémoch, ako aj ich výhody a nevýhody. 
+
+\subsection{Optické systémy}
+Pri optických systémoch snímania pohybu má herec oblečený špeciálne navrhnutý oblek, ktorý je pokrytý reflektormi umiestnenými na tele herca, pričom kamery s vysokým rozlíšením sú tak rozmiestnené, aby snímali pohyby herca. Každá kamera generuje pre každý reflektor 2D súradnice. Následne sa pomocou počítačového softvéru vykoná analýza zo všetkých dát zachýtených kamerami, čím sa vypočítajú 3D súradnice reflektorov.
+\subsubsection{Výhody a nevýhody}
+Hlavnou výhodou optického systému je veľmi vysoká frekvencia vzorkovania, ktorá umožňuje snímanie veľmi rýchlych pohybov, napríklad pri gymnastike alebo atletike. Ďaľšou výhodou je to, že oproti akustickému systému či iným ďalším systémom nie sú potrebné žiadne káble, ktoré by obmedzovali pohyby herca. To poskytuje hercovi maximálnu volnosť pohybu. Navyše, vďaka tomu, že reflektory nemajú žiaden odpor, tak počet reflektorov použitých pri snímaní pohybu je neobmedzený, čo  umožňuje zachytávať aj tie najmenšie detaily.
+
+Žiadny systém nie je dokonalý a to isté platí aj pri optickom systéme. Hlavným problémom tejto metódy je to, že dochádza k častej oklúzií reflektorov najmä pri malých objektoch, ako sú napríklad reflektory na rukách. Tento problém môže byť čiastočne odstránený pridaním ďalších kamier, čo nás privázda k ďaľšej nevýhode a tou je cena. Tieto systémy sú najdrahšie zo všetkých, pričom cena sa môže vyšplhať až do výšky 250 000\$ (americký dolár).
+
+\subsection{Magnetické systémy}
+Magnetické systémy snímania pohybu využívajú senzory umiestnené na tele herca. Tieto senzory slúžia na meranie magnetického poľa generovaného zdrojom vysielača. Senzory , ako aj vysielač sú pripojené k riadiacej jednotke, ktorá koreluje ich polohy v rámci magnetického poľa. . Táto riadiaca jednotka je prepojená s počítačom, ktorý pomocou softvérového ovladača dokáže znázorniť tieto pozície v trojrozmernom priestore.
+\subsubsection{Výhody a nevýhody}
+I napriek tomu, že v porovnaní s inými systémami na snímanie pohybu ide o pomerne lacnejší variant, presnosť nasnímaných dát je aj tak dostatočne vysoká. S typickou vzorkovacou frekvenciou 100 snímkou  za sekundu sú magnetické systémy vhodné hlavne na snímanie jednoduchých pohybov.
+
+Ako aj pri akustickom systéme, tak aj pri magneticko systéme je na správne fungovanie potrebné veľke množstvo káblov, čo opäť obmedzuje pohyb herca. Navyše ak sa v blízkosti nachádzaju nejaké kovové predmety môže dôjst k narušeniu magnetického poľa, čo je zásadným problémom tohto systému.
+
+
+\subsection{Mechanické systémy}
+Mechanické systémy sú najčastejšie stavané na mechanickej konštrukcíi, ktorá meria uhly a vzdialenosti medzi mechanickými časťami pomocou potenciometrov. Tento typ systému môže byť prostredníctvom senzorov implementovaný do exoskeletonu. Herec si oblečie exoskeleton a násladne každým pohybom, ktorý vykoná sa pohnú aj mechanické časti, pričom sa meria relatívny pohyb herca.
 \end{document}
